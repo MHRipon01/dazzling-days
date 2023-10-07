@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../firebase/AuthProvider";
+import { ToastContainer } from "react-toastify";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -58,7 +59,7 @@ const Navbar = () => {
   );
 
   return (
-    <div>
+    <div className="max-w-full md:max-w-full">
       <div className="navbar bg-neutral-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -100,14 +101,14 @@ const Navbar = () => {
           {user ? (
             <>
              {
-              user.photoURL ? <img className="w-10 rounded-full" src={user.photoURL} alt="" /> 
+              user.photoURL ? <img className="w-1/3 h-1/3 md:w-12 rounded-full  md:mr-3" src={user.photoURL} alt="" /> 
                
               
               :
-              <img className="rounded-full w-10 mr-1" src="https://i.ibb.co/WHrCzF1/user.png" alt="" />
+              <img className="rounded-full w-10  mr-1 md:mr-3" src="https://i.ibb.co/WHrCzF1/user.png" alt="" />
              } 
              
-             <div className="md:flex justify-center items-center -mr-16">
+             <div className="md:flex justify-center items-center ">
              <div className="text-lg font-medium ">{user.displayName}</div>
               <div>
               <button className="btn" onClick={handleSignOut}>Sign Out
@@ -118,7 +119,7 @@ const Navbar = () => {
           ) : (
             <div>
               <NavLink
-                className="text-2xl rounded-xl p-3"
+                className="text-2xl  rounded-xl p-3"
                 to="/login"
                 style={({ isActive }) => {
                   return {
@@ -133,6 +134,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
