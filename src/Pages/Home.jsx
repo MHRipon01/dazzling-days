@@ -3,10 +3,19 @@ import Banner from "../components/Banner";
 import ServiceDetails from "./ServiceDetails";
 import Footer from "../components/Footer";
 import Venue from "../components/Venue";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import { useEffect } from "react";
 
 const Home = () => {
   const services = useLoaderData();
   console.log(services);
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
+
 
   return (
     <div>
@@ -19,7 +28,7 @@ const Home = () => {
           <ServiceDetails key={service.id} services={service}></ServiceDetails>
         ))}
       </div>
-      <div>
+      <div  >
             <Venue></Venue>
       </div>
       <div className="pt-16 ">

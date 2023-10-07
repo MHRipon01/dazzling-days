@@ -13,7 +13,7 @@ const ServiceDetails = ({ services }) => {
   // console.log(id);
 
   useEffect(() => {
-    AOS.init({duration: 3000,});
+    AOS.init();
   }, [])
 
 
@@ -22,7 +22,9 @@ const ServiceDetails = ({ services }) => {
   return (
     <div className=' flex justify-center '>
      
-     <div  className="card  w-5/6 bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-300 border    bg-base-100 shadow-2xl mt-11 " data-aos="zoom-out-down">
+     <div  className="card  w-5/6 bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-300 border    bg-base-100 shadow-2xl mt-11 " data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
         <figure className="  p-3" >
           <img src={image} alt="Shoes" className="rounded-xl" />
         </figure>

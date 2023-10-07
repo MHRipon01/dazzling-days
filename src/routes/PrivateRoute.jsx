@@ -12,9 +12,6 @@ const PrivateRoute = ({ children }) => {
 
 
 
-// const loader = useEffect(()=> {
-//             fetch('loading.json')
-//         })
   if (loading) {
     return (
         <div className="h-[90vh] flex justify-center items-center ">

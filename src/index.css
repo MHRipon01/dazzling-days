@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
 
+@font-face {
+    font-family: myFirstFont;
+    src: url(Rundkursiv.ttf);
+}
+  
+#logoName{
+    font-family: myFirstFont;
+}
 
 
 @tailwind base;

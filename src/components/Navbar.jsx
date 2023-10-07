@@ -1,24 +1,34 @@
 import { useContext } from "react";
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { AuthContext } from "../firebase/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  console.log(user);
 
-  const {user , logOut} = useContext(AuthContext)
-
-  const handleSignOut = () =>{
+  const handleSignOut = () => {
     logOut()
-    .then()
-    .catch(error => {
-      console.error(error)
-    })
-  }
+      .then()
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
 
   const navLinks = (
-    < >
+    <>
       <NavLink
-        to="/" className="text-2xl rounded-xl p-3"
-        style={({ isActive }) => {return {fontWeight: isActive ? "bold" : "",backgroundColor: isActive ? "pink" : "",};}}>Home</NavLink>
+        to="/"
+        className="text-2xl rounded-xl p-3"
+        style={({ isActive }) => {
+          return {
+            fontWeight: isActive ? "bold" : "",
+            backgroundColor: isActive ? "pink" : "",
+          };
+        }}
+      >
+        Home
+      </NavLink>
 
       <NavLink
         className="text-2xl rounded-xl p-3"
@@ -27,13 +37,13 @@ const Navbar = () => {
           return {
             fontWeight: isActive ? "bold" : "",
             backgroundColor: isActive ? "pink" : "",
-           
           };
         }}
       >
         Events
       </NavLink>
-      <NavLink className="text-2xl rounded-xl p-3"
+      <NavLink
+        className="text-2xl rounded-xl p-3"
         to="/contact"
         style={({ isActive }) => {
           return {
@@ -44,8 +54,6 @@ const Navbar = () => {
       >
         Contact
       </NavLink>
-
-      
     </>
   );
 
@@ -77,35 +85,52 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <h3 className="font-Monsieur text-5xl text-fuchsia-600 font-extrabold my-4">
+          <h3
+            id="logoName"
+            className=" text-4xl font-semibold md:text-6xl md:font-extrabold text-fuchsia-600  my-4"
+          >
             Dazzling Days{" "}
           </h3>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
-        <div className="navbar-end">
-          {
-            user ? <button onClick={handleSignOut}>Sign Out </button>
-            :
-            <NavLink
-            className="text-2xl rounded-xl p-3"
-            to="/login"
-            style={({ isActive }) => {
-              return {
-                fontWeight: isActive ? "bold" : "",
-                backgroundColor: isActive ? "pink" : "",
+        <div className="navbar-end md:flex justify-center items-center text-center ">
+          
+          {user ? (
+            <>
+             {
+              user.photoURL ? <img className="w-10 rounded-full" src={user.photoURL} alt="" /> 
                
-              };
-            }}
-          >
-            Login
-          </NavLink>
-          }
-
-
-
-         
+              
+              :
+              <img className="rounded-full w-10 mr-1" src="https://i.ibb.co/WHrCzF1/user.png" alt="" />
+             } 
+             
+             <div className="md:flex justify-center items-center -mr-16">
+             <div className="text-lg font-medium ">{user.displayName}</div>
+              <div>
+              <button className="btn" onClick={handleSignOut}>Sign Out
+             </button>
+              </div>
+             </div>
+            </>
+          ) : (
+            <div>
+              <NavLink
+                className="text-2xl rounded-xl p-3"
+                to="/login"
+                style={({ isActive }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    backgroundColor: isActive ? "pink" : "",
+                  };
+                }}
+              >
+                Login
+              </NavLink>
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -2,14 +2,20 @@ import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../firebase/AuthProvider";
 
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { signInWithPopup } from "firebase/auth";
+
+
 const Login = () => {
 
-  const {signIn} = useContext(AuthContext)
+  const {signIn,auth ,user ,googleLogin} = useContext(AuthContext)
 
   const navigate = useNavigate()
 
   const location = useLocation()
-  console.log('in lgnn',location);
+  console.log('in lgn',location);
 
 
 
@@ -22,6 +28,7 @@ const Login = () => {
       signIn(email,password)
       .then(result => {
         console.log(result.user);
+        toast('Welcome back!')
 
         navigate(location?.state ? location.state : '/' )
 
@@ -31,7 +38,15 @@ const Login = () => {
       })
     }
 
-    
+    const handleGoogleLogin = () => {
+      signInWithPopup(auth , googleLogin )
+    .then(result => {
+      console.log(result);
+    })
+    .catch(error => {
+      console.error(error);
+    })
+    }
 
 
 
@@ -69,8 +84,9 @@ const Login = () => {
       <p className="text-center text-lg ">Do not have an account? Please <Link className="font-bold text-lg text-fuchsia-300" to='/register'>Register</Link> </p>
 
       <div>
-        <button className="text-3xl btn mt-20 font-bold bg-pink-300 justify-center text-center items-center flex w-full">Login with Google</button>
+        <button onClick={handleGoogleLogin} className="text-3xl btn mt-20 font-bold bg-pink-300 justify-center text-center items-center flex w-full">Login with Google</button>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };
