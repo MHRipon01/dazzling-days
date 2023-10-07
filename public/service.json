@@ -1,0 +1,103 @@
+[
+  {
+    "id": "1",
+    "name": "Birthday Bash",
+    "image": "https://i.ibb.co/58vpjHD/brthdy.jpg",
+    "price": "$200",
+    "description": "A fun and exciting birthday party package.",
+    "detailed_description": [
+      "Private party room for 2 hours",
+      "Dedicated party host",
+      "Invitations",
+      "Tableware and decorations",
+      "Food and drinks (cake, pizza, ice cream, soda, etc.)",
+      "Games and activities (face painting, balloon, etc.)"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Wedding Wonderland",
+    "image": "https://i.ibb.co/VH4Z11Y/wedding.jpg",
+    "price": "$5000",
+    "description": "A beautiful and romantic wedding package.",
+    "detailed_description": [
+        "Ceremony and reception venue",
+        "Catering",
+        "Bar service",
+        "Photography and videography",
+        "DJ or live band",
+        "Florals and décor",
+        "Wedding planner"
+      ]
+  },
+  {
+    "id": "3",
+    "name": "Anniversary Adventure",
+    "image": "https://i.ibb.co/nR4ZP8r/marrige-ann.jpg",
+    "price": "$1000",
+    "description": "A memorable and thrilling anniversary package."
+    ,
+    "detailed_description": [
+        "Weekend getaway for two",
+        "Hotel accommodations",
+        "Restaurant reservations",
+        "Activities (tickets to a show, spa treatments, wine tasting, etc.)",
+        "Gift basket"
+      ]
+  },
+  {
+    "id": "4",
+    "name": "Engagement Euphoria",
+    "image": "https://i.ibb.co/vYmf5L8/engagement.jpg",
+    "price": "$1500",
+    "description": "An enchanting and joyful engagement party package."
+    ,
+    "detailed_description": [
+        "Private party room for 2 hours",
+        "Dedicated party host",
+        "Invitations",
+        "Tableware and decorations",
+        "Food and drinks (appetizers, champagne, cake, etc.)",
+        "Photography and videography",
+        "DJ or live band"
+      ]
+  },
+  {
+    "id": "5",
+    "name": "Retirement Revelry",
+    "image": "https://i.ibb.co/q9pW4KC/image.png",
+    "price": "$800",
+    "description": "A lively and entertaining retirement party package."
+    ,
+    "detailed_description": [
+        "Private party room for 2 hours",
+        "Dedicated party host",
+        "Invitations",
+        "Tableware and decorations",
+        "Food and drinks (appetizers, cocktails, dinner, etc.)",
+        "Music and dancing",
+        "Gift basket"
+      ]
+  },
+  {
+    "id": "6",
+    "name": "Baby Shower Bliss",
+    "image": "https://i.ibb.co/C29VRbD/baby-shower.jpg",
+    "price": "$300",
+    "description": "A sweet and charming baby shower package."
+    ,
+    "detailed_description": [
+        "Private party room for 2 hours",
+        "Dedicated party host",
+        "Invitations",
+        "Tableware and decorations",
+        "Food and drinks (appetizers, desserts, drinks, etc.)",
+        "Baby-themed games and activities",
+        "Gift table"
+        
+        
+        
+        
+              ]
+  }
+]
