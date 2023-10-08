@@ -21,15 +21,15 @@ useEffect(() => {
   return (
   <div>
       <div className="w-full items-center justify-center flex ">
-      <div className="my-28 max-w-[1150px] -2 ">
+      <div className="my-12 max-w-[1150px] -2 ">
         <div className="text-[#CE8566]">
           <h3 className="text-xl text-[#CE8566] py-3">AWARDS AND REVIEWS</h3>
           <h2 className="font-Cormorant text-4xl font-medium">
-            ONE OF THE TOP TEN MOST BEAUTIFUL <br /> WEDDING VENUES IN THE USA
+            ONE OF THE TOP TEN MOST BEAUTIFUL <br /> WEDDING VENUES IN THE BD
           </h2>
         </div>
 
-        <div className="  grid grid-cols-2 md:flex  lg:mx-auto">
+        <div className="  grid grid-cols-1 md:flex  lg:mx-auto">
           <div className="flex px-7">
             <img  data-aos="zoom-in-right"  className="w-[6.5em] -rotate-45" src={rose} alt="" />
             <div className="my-auto">

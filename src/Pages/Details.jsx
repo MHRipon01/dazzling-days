@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 
 const Details = () => {
   const services = useLoaderData();
 
   const [service, setService] = useState({});
 
-//   console.log(services);
+  console.log(services);
 
   const { id } = useParams();
   // console.log(id);
@@ -41,7 +41,7 @@ const Details = () => {
 
           <p className="text-xl font-semibold m-7 ">Price: {service.price}</p>
           <div className="card-actions justify-end">
-            <button className="btn  bg-fuchsia-300 border  font-bold ">Start Celebrating</button>
+           <Link to='/contact'> <button className="btn  bg-fuchsia-300 border  font-bold ">Start Celebrating</button></Link>
           </div>
         </div>
       </div>
