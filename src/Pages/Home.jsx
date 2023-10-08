@@ -19,7 +19,7 @@ const Home = () => {
 
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       
       <div className=" image-full w-fit">
         <Banner></Banner>

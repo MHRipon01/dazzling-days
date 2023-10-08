@@ -1,13 +1,13 @@
 import 'aos/dist/aos.css';
-import AOS from 'aos';
+// import AOS from 'aos';
 import { useEffect } from 'react';
 
 
 const Venue = () => {
 
-  useEffect(() => {
-    AOS.init({duration:900});
-  }, [])
+  // useEffect(() => {
+  //   AOS.init({duration:900});
+  // }, [])
 
 
 

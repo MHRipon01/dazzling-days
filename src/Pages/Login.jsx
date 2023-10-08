@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../firebase/AuthProvider";
-
+import { FcGoogle} from "react-icons/fc";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { signInWithPopup } from "firebase/auth";
@@ -97,9 +97,9 @@ const Login = () => {
       <div>
         <button
           onClick={handleGoogleLogin}
-          className="text-3xl btn mt-20 font-bold bg-pink-300 justify-center text-center items-center flex w-full"
+          className="text-3xl btn bg-fuchsia-300 mt-20 font-medium font-Crimson  justify-center text-center items-center flex w-full"
         >
-          Login with Google
+          Login with  <FcGoogle></FcGoogle>
         </button>
       </div>
       <ToastContainer />
