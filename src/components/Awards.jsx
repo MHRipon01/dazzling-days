@@ -3,8 +3,21 @@ import rose from "../assets/rose.png";
 import rose3 from "../assets/rose-2.png";
 import rose4 from "../assets/flower4.png";
 
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import Aos from "aos";
+
+
+
 
 const Awards = () => {
+
+useEffect(() => {
+  Aos.init({duration:2500});
+}, [])
+
+
+
   return (
   <div>
       <div className="w-full items-center justify-center flex ">
@@ -18,28 +31,31 @@ const Awards = () => {
 
         <div className="  grid grid-cols-2 md:flex  lg:mx-auto">
           <div className="flex px-7">
-            <img className="w-[6.5em] -rotate-45" src={rose} alt="" />
+            <img  data-aos="zoom-in-right"  className="w-[6.5em] -rotate-45" src={rose} alt="" />
             <div className="my-auto">
               <h5 className="font-Cormorant text-4xl font-semibold">156</h5>
               <h3 className="font-Crimson text-2xl">Weddings Per Year</h3>
             </div>
           </div>
           <div className="flex px-7">
-            <img className="w-[6.5em] rotate-45" src={rose3} alt="" />
+            <img data-aos="fade-up-left" className="w-[6.5em] rotate-45" src={rose3} alt="" />
             <div className="my-auto">
               <h5 className="font-Cormorant text-4xl font-semibold">8</h5>
               <h3 className="font-Crimson text-2xl">Years of Celebration</h3>
             </div>
           </div>
+
+
+          {/* this one  */}
           <div className="flex px-7">
-            <img className="w-[6.5em] -rotate-45" src={rose3} alt="" />
+            <img data-aos="fade-up-right" className="w-[6.5em] -rotate-45" src={rose3} alt="" />
             <div className="my-auto">
               <h5 className="font-Cormorant text-4xl font-semibold">1562</h5>
               <h3 className="font-Crimson text-2xl">Flower Bouquets</h3>
             </div>
           </div>
           <div className="flex px-7">
-            <img className="w-[6.5em] rotate-45" src={rose4} alt="" />
+            <img data-aos="zoom-in-left" className="w-[6.5em] rotate-45" src={rose4} alt="" />
             <div className="my-auto">
               <h5 className="font-Cormorant text-4xl font-semibold">230</h5>
               <h3 className="font-Crimson text-2xl">Sunny Days per Year</h3>

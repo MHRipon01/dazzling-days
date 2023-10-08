@@ -27,15 +27,15 @@ const Register = () => {
       setRegisterError('Password should have at least one capital letter')
       return
     }
-    // else if(!/[!@#%^&*()_+-=[]{}|;':",.<>?~`]/.test(password)){
-    //   setRegisterError('Password should have at least one special character')
-    //   return
-    // }
-
-    else if(!/[\W_]/.test(password)){
+    else if(!/^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&?*]).{6,}$/.test(password)){
       setRegisterError('Password should have at least one special character')
       return
     }
+
+    // else if(!/[\W_]/.test(password)){
+    //   setRegisterError('Password should have at least one special character')
+    //   return
+    // }
     
 
 
@@ -58,12 +58,15 @@ const Register = () => {
         console.log(result);
       
           toast("Registration complete!");
+          e.target.reset()
         
       })
       .catch((error) => {
         setRegisterError(error.message)
         console.error(error);
       });
+
+
   };
 
   return (

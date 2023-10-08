@@ -26,7 +26,7 @@ const Login = () => {
       .then((result) => {
         console.log(result.user);
         toast("Welcome back!");
-
+        e.target.reset()
         navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {

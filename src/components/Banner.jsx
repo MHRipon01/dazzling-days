@@ -1,13 +1,24 @@
 import { GiButterflyFlower ,GiRose } from "react-icons/gi";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
-const Banner = () => {
+const Banner = () => {  
+
+    
+  useEffect(() => {
+    Aos.init({duration:1500});
+  }, [])
+
+
+
     return (
         <div className="w-full">
           <div className="w-full text-6xl text-[#C0C0C0] flex justify-center p-3  ">
           <GiButterflyFlower ></GiButterflyFlower>
           <GiRose></GiRose>
           </div>
-          <div className="text-[#A09B91] text-center">
+          <div data-aos="flip-right" className="text-[#A09B91] text-center">
                 <h2 className="text-7xl ">TIMELESS MOMENTS</h2>
                 <p className="font-serif text-xl py-4 ">Let us help you create a day that is truly unforgettable</p>
           </div>

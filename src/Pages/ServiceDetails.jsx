@@ -29,9 +29,9 @@ const ServiceDetails = ({ services }) => {
           <img src={image} alt="Shoes" className="rounded-xl" />
         </figure>
         <div className="card-body items-center text-center">
-          <h2 className="card-title text-3xl font-bold">{name}</h2>
-          <p className='text-xl'>{description}</p>
-        <p className='text-2xl font-medium'>Price: {price}</p>
+          <h2 id='' className="card-title font-Crimson text-3xl font-bold">{name}</h2>
+          <p className='text-xl font-medium'>{description}</p>
+        <p className='text-xl font-medium'>Price: {price}</p>
           <div className="card-actions">
            <Link to={`/details/${id}`}> <button className="btn bg-pink-300">Fix a date</button></Link>
           </div>

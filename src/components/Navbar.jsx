@@ -53,7 +53,7 @@ const Navbar = () => {
           };
         }}
       >
-        Contact
+        Reservation
       </NavLink>
     </>
   );
@@ -101,7 +101,7 @@ const Navbar = () => {
           {user ? (
             <>
              {
-              user.photoURL ? <img className="w-1/3 h-1/3 md:w-12 rounded-full  md:mr-3" src={user.photoURL} alt="" /> 
+              user.photoURL ? <img className="w-[60px] h-[50px] md:w-12 rounded-full  md:mr-3" src={user.photoURL} alt="" /> 
                
               
               :
