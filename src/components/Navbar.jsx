@@ -20,7 +20,7 @@ const Navbar = () => {
     <>
       <NavLink
         to="/"
-        className="text-2xl rounded-xl p-3"
+        className="text-2xl font-Cormorant font-medium rounded-xl p-3"
         style={({ isActive }) => {
           return {
             fontWeight: isActive ? "bold" : "",
@@ -32,7 +32,7 @@ const Navbar = () => {
       </NavLink>
 
       <NavLink
-        className="text-2xl rounded-xl p-3"
+        className="text-2xl font-Cormorant  font-medium rounded-xl p-3"
         to="/events"
         style={({ isActive }) => {
           return {
@@ -44,7 +44,7 @@ const Navbar = () => {
         Events
       </NavLink>
       <NavLink
-        className="text-2xl rounded-xl p-3"
+        className="text-2xl font-Cormorant font-medium rounded-xl p-3"
         to="/contact"
         style={({ isActive }) => {
           return {
@@ -109,9 +109,9 @@ const Navbar = () => {
              } 
              
              <div className="md:flex justify-center items-center ">
-             <div className="text-lg font-medium ">{user.displayName}</div>
+             <div className="text-lg font-bold font-Cormorant">{user.displayName}</div>
               <div>
-              <button className="btn" onClick={handleSignOut}>Sign Out
+              <button className="btn font-Cormorant font-bold" onClick={handleSignOut}>Sign Out
              </button>
               </div>
              </div>
@@ -119,7 +119,7 @@ const Navbar = () => {
           ) : (
             <div>
               <NavLink
-                className="text-2xl  rounded-xl p-3"
+                className="text-2xl font-Cormorant rounded-xl p-3"
                 to="/login"
                 style={({ isActive }) => {
                   return {

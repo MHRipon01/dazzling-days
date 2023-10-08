@@ -8,7 +8,7 @@ const Banner = () => {
           <GiRose></GiRose>
           </div>
           <div className="text-[#A09B91] text-center">
-                <h2 className="text-7xl">TIMELESS MOMENTS</h2>
+                <h2 className="text-7xl ">TIMELESS MOMENTS</h2>
                 <p className="font-serif text-xl py-4 ">Let us help you create a day that is truly unforgettable</p>
           </div>
             <img className="w-full lg:w-[90vw]  lg:ml-10 mt-10" src="https://i.ibb.co/QHM3wHg/slider.jpg" alt="" />

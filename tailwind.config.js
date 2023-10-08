@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        Monsieur:"'Monsieur La Doulaise', cursive"
+        Monsieur:"'Monsieur La Doulaise', cursive",
+        Cormorant: " 'Cormorant', serif",
+        Crimson: "'Crimson Text', serif"
       }
     },
   },
