@@ -2,13 +2,15 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../firebase/AuthProvider";
 
+import { FcGoogle} from "react-icons/fc";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { updateProfile } from "firebase/auth";
+import { signInWithPopup, updateProfile } from "firebase/auth";
 
 const Register = () => {
  
-  const { createUser, auth } = useContext(AuthContext);
+  const { createUser, auth,googleLogin } = useContext(AuthContext);
+  
  const [registerError ,setRegisterError] = useState('')
   const handleRegister = (e) => {
     e.preventDefault();
@@ -18,6 +20,7 @@ const Register = () => {
     const email = form.get("email");
     const password = form.get("password");
     console.log(email, name, photoUrl, password);
+
 
     if(password.length < 6){
       setRegisterError('Password should be at least 6 characters')
@@ -47,6 +50,7 @@ const Register = () => {
 
     createUser(email, password)
       .then((result) => {
+        console.log(result);
         updateProfile(auth.currentUser, {
           displayName: name,
           photoURL: photoUrl,
@@ -65,6 +69,19 @@ const Register = () => {
 
 
   };
+
+  
+  const handleGoogleLogin = () => {
+    signInWithPopup(auth, googleLogin)
+      .then((result) => {
+        toast("Welcome back");
+        console.log(result);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
 
   return (
     <div>
@@ -131,6 +148,17 @@ const Register = () => {
           </Link>{" "}
         </p>
 
+      </div>
+
+      <div  className="w-full">
+      <div className="flex justify-center items-center">
+        <button
+          onClick={handleGoogleLogin}
+          className="text-3xl btn w-1/3 bg-fuchsia-300 mt-20 font-medium font-Crimson  justify-center text-center items-center flex"
+        >
+          Register with <FcGoogle></FcGoogle>
+        </button>
+      </div>
       </div>
       <ToastContainer />
     </div>

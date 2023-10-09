@@ -23,7 +23,7 @@ const Details = () => {
   return (
     <div className="p-3">
       
-      <div className="card p-5 bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-300 border card-compact mx-auto mb-28  bg-base-100 shadow-xl">
+      <div className="card p-5  bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-300 border card-compact mx-auto mb-28  bg-base-100 shadow-xl">
         <figure>
           <img className="min-w-full p-4" src={service.image} alt="Shoes" />
         </figure>

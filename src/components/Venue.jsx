@@ -14,7 +14,7 @@ const Venue = () => {
     return (
         <div>
             <div >
-                <h3 className="text-6xl font-bold text-[#FFD700] text-center mt-16">Our Venues</h3>
+                <h3 className="text-6xl font-bold text-[#d6b48c] text-center mt-16">Our Venues</h3>
             </div>
             <footer  className="flex flex-col items-center text-center text-white dark:bg-neutral-600 dark:text-neutral-200">
         <div className="container p-6" >

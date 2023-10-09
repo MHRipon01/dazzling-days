@@ -22,18 +22,19 @@ const ServiceDetails = ({ services }) => {
   return (
     <div className=' flex justify-center '>
      
-     <div  className="card  w-5/6 bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-300 border    bg-base-100 shadow-2xl mt-11 " data-aos="fade-right"
+     <div  className="card  bg-[A09B91]  w-5/6   bg-gradient-to-tl hover:from-[#d6b48c]  to-[#f0e0ce] transition-all duration-1000    shadow-2xl mt-11 " data-aos="fade-right"
      data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+     data-aos-easing="ease-in-sine"
+     style={{ transition:'2s'}}>
         <figure className="  p-3" >
           <img src={image} alt="Shoes" className="rounded-xl" />
         </figure>
         <div className="card-body items-center text-center">
           <h2 id='' className="card-title font-Crimson text-3xl font-bold">{name}</h2>
-          <p className='text-xl font-medium'>{description}</p>
-        <p className='text-xl font-medium'>Price: {price}</p>
+          <p className='text-xl  font-medium'>{description}</p>
+        <p className='text-xl  font-medium'>Price: {price}</p>
           <div className="card-actions">
-           <Link to={`/details/${id}`}> <button className="btn bg-pink-300">Fix a date</button></Link>
+           <Link to={`/details/${id}`}> <button className="btn  hover:bg-[#f0e0ce]">Fix a date</button></Link>
           </div>
         </div>
       </div>

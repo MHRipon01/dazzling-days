@@ -15,7 +15,7 @@ const Events = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* card 1 */}
-        <div className="relative my-10 flex w-full max-w-[48rem] flex-row rounded-xl  bg-clip-border text-gray-700 shadow-md bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-300 ">
+        <div className="relative my-10 flex w-full max-w-[48rem] flex-row rounded-xl  bg-clip-border text-gray-700 shadow-md bg-gradient-to-l from-indigo-200 via-blue-300 to-pink-200 ">
           <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none  bg-clip-border text-gray-700">
             <img
               src="https://i.ibb.co/8x5nNCZ/birthdayparty.jpg"
@@ -50,7 +50,7 @@ const Events = () => {
 
         {/* card 2 */}
 
-        <div className="relative my-10 flex w-full max-w-[48rem] flex-row rounded-xl  bg-clip-border text-gray-700 shadow-md bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-300 ">
+        <div className="relative my-10 flex w-full max-w-[48rem] flex-row rounded-xl  bg-clip-border text-gray-700 shadow-md bg-gradient-to-l from-indigo-200 via-blue-300 to-pink-200 ">
           <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none  bg-clip-border text-gray-700">
             <img
               src="https://i.ibb.co/tQsprLM/image.png"
@@ -84,7 +84,7 @@ const Events = () => {
         </div>
 
         {/* card 3 */}
-        <div className="relative  flex w-full max-w-[48rem] flex-row rounded-xl  bg-clip-border text-gray-700 shadow-md bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-300 ">
+        <div className="relative  flex w-full max-w-[48rem] flex-row rounded-xl  bg-clip-border text-gray-700 shadow-md bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-100 ">
           <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none  bg-clip-border text-gray-700">
             <img
               src="https://i.ibb.co/1vjdCQz/marriageanniver.jpg"
@@ -116,7 +116,7 @@ const Events = () => {
         </div>
 
         {/* card 4 */}
-        <div className="relative  flex w-full max-w-[48rem] flex-row rounded-xl  bg-clip-border text-gray-700 shadow-md bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-300 ">
+        <div className="relative  flex w-full max-w-[48rem] flex-row rounded-xl  bg-clip-border text-gray-700 shadow-md bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-200 ">
           <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none  bg-clip-border text-gray-700">
             <img
               src="https://i.ibb.co/c2xk91V/engagement.jpg"
@@ -147,7 +147,7 @@ const Events = () => {
         </div>
 
         {/* card 5 */}
-        <div className="relative my-10 flex w-full max-w-[48rem] flex-row rounded-xl  bg-clip-border text-gray-700 shadow-md bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-300 ">
+        <div className="relative my-10 flex w-full max-w-[48rem] flex-row rounded-xl  bg-clip-border text-gray-700 shadow-md bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-200 ">
           <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none  bg-clip-border text-gray-700">
             <img
               src="https://i.ibb.co/LrZ79Tw/retirement.jpg"
@@ -181,7 +181,7 @@ const Events = () => {
         </div>
 
         {/* card 6 */}
-        <div className="relative my-10 flex w-full max-w-[48rem] flex-row rounded-xl  bg-clip-border text-gray-700 shadow-md bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-300 ">
+        <div className="relative my-10 flex w-full max-w-[48rem] flex-row rounded-xl  bg-clip-border text-gray-700 shadow-md bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-200 ">
           <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none  bg-clip-border text-gray-700">
             <img
               src="https://i.ibb.co/VjFR797/army.jpg"

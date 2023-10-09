@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { AuthContext } from "../firebase/AuthProvider";
 import { Navigate, useLocation } from "react-router-dom";
 import loader from '../assets/loader.gif'

@@ -39,6 +39,7 @@ const Login = () => {
     signInWithPopup(auth, googleLogin)
       .then((result) => {
         toast("Welcome back");
+        navigate(location?.state ? location.state : "/");
         console.log(result);
       })
       .catch((error) => {

@@ -24,7 +24,7 @@ const Navbar = () => {
         style={({ isActive }) => {
           return {
             fontWeight: isActive ? "bold" : "",
-            backgroundColor: isActive ? "pink" : "",
+            backgroundColor: isActive ? "#e8dfcf" : "",
           };
         }}
       >
@@ -37,7 +37,7 @@ const Navbar = () => {
         style={({ isActive }) => {
           return {
             fontWeight: isActive ? "bold" : "",
-            backgroundColor: isActive ? "pink" : "",
+            backgroundColor: isActive ? "#e8dfcf" : "",
           };
         }}
       >
@@ -49,7 +49,7 @@ const Navbar = () => {
         style={({ isActive }) => {
           return {
             fontWeight: isActive ? "bold" : "",
-            backgroundColor: isActive ? "pink" : "",
+            backgroundColor: isActive ? "#e8dfcf" : "",
           };
         }}
       >
@@ -88,7 +88,7 @@ const Navbar = () => {
           </div>
           <h3
             id="logoName"
-            className=" text-4xl font-semibold md:text-6xl md:font-extrabold text-fuchsia-600  my-4"
+            className=" text-4xl font-semibold md:text-6xl md:font-extrabold text-[#e8b67d]  my-4"
           >
             Dazzling Days{" "}
           </h3>
