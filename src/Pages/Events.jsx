@@ -84,7 +84,8 @@ const Events = () => {
         </div>
 
         {/* card 3 */}
-        <div className="relative  flex w-full max-w-[48rem] flex-row rounded-xl  bg-clip-border text-gray-700 shadow-md bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-100 ">
+        <div className="relative  flex w-full max-w-[48rem] flex-row rounded-xl  bg-clip-border text-gray-700 shadow-md bg-gradient-to-r from-indigo-200 via-blue-300
+         to-pink-100 ">
           <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none  bg-clip-border text-gray-700">
             <img
               src="https://i.ibb.co/1vjdCQz/marriageanniver.jpg"
@@ -116,7 +117,7 @@ const Events = () => {
         </div>
 
         {/* card 4 */}
-        <div className="relative  flex w-full max-w-[48rem] flex-row rounded-xl  bg-clip-border text-gray-700 shadow-md bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-200 ">
+        <div className="relative my-10 md:my-0 flex w-full max-w-[48rem] flex-row rounded-xl  bg-clip-border text-gray-700 shadow-md bg-gradient-to-r from-indigo-200 via-blue-300 to-pink-200 ">
           <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none  bg-clip-border text-gray-700">
             <img
               src="https://i.ibb.co/c2xk91V/engagement.jpg"
@@ -124,7 +125,7 @@ const Events = () => {
               className="h-full w-full object-cover"
             />
           </div>
-          <div className="p-6">
+          <div className="p-6  ">
             <h4
               id="card-title"
               className="mb-2 block  text-3xl font-Cormorant font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased"

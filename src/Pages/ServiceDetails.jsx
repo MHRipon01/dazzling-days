@@ -22,7 +22,7 @@ const ServiceDetails = ({ services }) => {
   return (
     <div className=' flex justify-center '>
      
-     <div  className="card  bg-[A09B91]  w-5/6   bg-gradient-to-tl hover:from-[#d6b48c]  to-[#f0e0ce] transition-all duration-1000    shadow-2xl mt-11 " data-aos="fade-right"
+     <div  className="card    w-5/6 from-white to-white  bg-gradient-to-tl hover:from-[#d6b48c]  hover:to-[#f0e0ce] transition-all duration-1000    shadow-2xl mt-11 " data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine"
      style={{ transition:'2s'}}>

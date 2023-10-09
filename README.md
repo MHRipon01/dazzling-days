@@ -1,5 +1,6 @@
 # Dazzling Days Event Website
 
+**Website link**: https://dazzling-days-event.web.app/
 
 
 Welcome to the Dazzling Days Event Website! Our platform is designed to provide you with an exceptional event planning experience. Here are some of the features and functionalities that make our website stand out:
@@ -19,4 +20,4 @@ Welcome to the Dazzling Days Event Website! Our platform is designed to provide 
 
 Visit us at Dazzling Days Event Website and start planning your dazzling days now!
 
-Website link: https://dazzling-days-event.web.app/
+
