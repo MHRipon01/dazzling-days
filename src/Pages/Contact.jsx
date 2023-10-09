@@ -5,16 +5,14 @@ import "react-toastify/dist/ReactToastify.css";
 import { useEffect } from "react";
 
 const Contact = () => {
-  // useEffect(() => {
-  //   Aos.init();
-  // }, []);
+ 
 
   const handleToast = () => {
     toast("Congrats! Our team will contact with you.");
   };
 
   return (
-    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+    <div >
       <h3
         className="text-6xl bg-gradient-to-r  from-pink-500 via-blue-400
      to-indigo-300 bg-clip-text text-transparent mb-10  font-bold text-center"
